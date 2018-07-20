@@ -15,6 +15,7 @@ gem 'jbuilder'
 gem 'listen'
 gem 'bootsnap'
 gem 'bootstrap-sass'
+gem 'devise'
 
 group :doc do
   gem 'sdoc', require: false
