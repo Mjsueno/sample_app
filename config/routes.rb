@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'static_pages#home'
+  
+  resources :users, only: [:show]
+  devise_for :users
   match '/',to: 'static_pages#home',via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
